@@ -293,7 +293,7 @@ nav > ul > li {
 
 ```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
-![Screenshot 2025-02-06 234646](https://github.com/user-attachments/assets/24233da4-1543-421e-a884-b382b09aefe6)
+![LAB2](ScreenShot/1.png)
 
 
 [](#การทดลองที่-3-การจัดการสีและพื้นหลัง)
