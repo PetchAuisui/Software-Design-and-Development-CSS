@@ -231,11 +231,69 @@ div > p {
 3. เปลี่ยนสีพื้นหลังของเมนู
 
 ### ผลการทดลอง
+- HTML
 ```html
-[วางโค้ดที่นี่]
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" class="menu-item">หน้าแรก</a></li>
+            <li><a href="#" class="menu-item" id="active">สินค้า</a></li>
+            <li><a href="#" class="menu-item">เกี่ยวกับเรา</a></li>
+            <li><a href="#" class="menu-item">ติดต่อ</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
+```
+- CSS
+```CSS
+nav {
+    background-color: #ff9100;
+    padding: 15px;
+}
+
+/* การใช้ Descendant Selector */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* การใช้ Child Selector */
+nav > ul > li {
+    margin: 0 10px;
+}
+
+/* การใช้ Class Selector */
+.menu-item {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    
+}
+
+/* การใช้ Pseudo-class */
+.menu-item:hover {
+    background-color: #555;
+    border-radius: 3px;
+}
+
+/* การใช้ ID Selector */
+#active {
+    background-color: #007bff;
+    border-radius: 3px;
+}
+
+
 ```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
-
+![lab2](Screenshot/1.png)
 
 [](#การทดลองที่-3-การจัดการสีและพื้นหลัง)
 ## การทดลองที่ 3: การจัดการสีและพื้นหลัง
