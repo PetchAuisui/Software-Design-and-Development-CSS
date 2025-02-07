@@ -396,11 +396,144 @@ background-size: cover;
 3. เพิ่มเติมให้มี card แสดงข้อมูลสินค้า 4 รูป
 
 ### ผลการทดลอง
+- HTML
 ```html
-[วางโค้ดที่นี่]
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="product-container">
+        <div class="product-card">
+            <div class="product-image">
+                <img src="images/7400.png" alt="IC 7400">
+            </div>
+            <div class="product-info">
+                <h2 class="product-title">IC 7400</h2>
+                <p class="product-price">฿30</p>
+                <p class="product-description">NAND Gate</p>
+                <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="images/7402.png" alt="IC 7402">
+            </div>
+            <div class="product-info">
+                <h2 class="product-title">IC 7402</h2>
+                <p class="product-price">฿35</p>
+                <p class="product-description">NOR Gate</p>
+                <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="images/7404.png" alt="IC 7404">
+            </div>
+            <div class="product-info">
+                <h2 class="product-title">IC 7404</h2>
+                <p class="product-price">฿28</p>
+                <p class="product-description">NOT Gate</p>
+                <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="images/7408.png" alt="IC 7408">
+            </div>
+            <div class="product-info">
+                <h2 class="product-title">IC 7408</h2>
+                <p class="product-price">฿32</p>
+                <p class="product-description">AND Gate</p>
+                <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+```
+- CSS
+``` css
+body {
+    text-align: center; /* จัดให้อยู่ตรงกลาง */
+    background-color: #f8f9fa;
+}
+
+.product-card {
+    display: inline-block; /* ทำให้สินค้าเรียงต่อกัน */
+    width: 250px; /* กำหนดขนาดสินค้า */
+    margin: 10px; /* กำหนดระยะห่างระหว่างสินค้า */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: white;
+    text-align: center;
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+}
+
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* ปรับให้รูปไม่ถูกตัดขอบ */
+}
+ 
+
+.product-info {
+    padding: 15px;
+}
+
+.product-title {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    color: #007bff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.product-description {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.product-button {
+    display: block;
+    background: linear-gradient(to right, #007bff, #0056b3);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
+.product-button:hover {
+    background: linear-gradient(to right, #0056b3, #003980);
+}
 ```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
-
+![LAB4](ScreenShot/2.png)
 [](#การทดลองที่-4-การจัดการขนาดและระยะห่าง)
 ## การทดลองที่ 4: การจัดการขนาดและระยะห่าง
 
