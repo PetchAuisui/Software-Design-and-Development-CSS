@@ -627,6 +627,7 @@ border: 1px solid black;
 
 
 ### ผลการทดลอง
+- HTML
 ```html
 <!DOCTYPE html>
 <html>
@@ -651,6 +652,7 @@ border: 1px solid black;
 </body>
 </html>
 ```
+- CSS
 ```css
 
         .stats-container {
